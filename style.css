@@ -1,0 +1,261 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background-color: white;
+    padding: 40px 20px;
+}
+
+
+/* Main Container */
+
+.container {
+    width: 100%;
+    max-width: 1000px;
+    margin: auto;
+    
+}
+.ask{
+    text-align: center;
+}
+
+/* Main Heading */
+
+h1 {
+    color: #1559b7;
+    font-size: 40px;
+    margin-bottom: 55px;
+}
+
+
+/* Form Heading */
+
+h2 {
+    text-align: center;
+    font-size: 24px;
+    margin-bottom: 20px;
+    color: #222;
+}
+
+
+/* Form */
+
+form {
+    width: 420px;
+    max-width: 100%;
+    margin: auto;
+    border: 1px solid #aaa;
+    padding: 18px;
+}
+
+
+/* Form Group */
+
+.form-group {
+    margin-bottom: 15px;
+}
+
+
+/* Labels */
+
+label {
+    display: block;
+    font-size: 14px;
+    font-weight: bold;
+    margin-bottom: 5px;
+}
+
+
+/* Input and Textarea */
+
+input,
+textarea {
+    width: 100%;
+    padding: 8px;
+    border: 1px solid #999;
+    outline: none;
+    font-size: 14px;
+    font-family: Arial, sans-serif;
+}
+
+
+/* Input focus */
+
+input:focus,
+textarea:focus {
+    border-color: #168acb;
+}
+
+
+/* Textarea */
+
+textarea {
+    height: 80px;
+    resize: none;
+}
+
+
+/* Error */
+
+.error {
+    color: red;
+    font-size: 12px;
+    min-height: 14px;
+    margin-top: 4px;
+}
+
+
+/* Bio information */
+
+.bio-info {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 5px;
+    font-size: 12px;
+}
+
+
+/* Warning */
+
+#bioWarning {
+    color: orange;
+}
+
+
+/* Character counter */
+
+#charCount {
+    color: #555;
+    margin-left: auto;
+}
+
+
+/* Submit Button */
+
+#submitBtn {
+    width: 100%;
+    padding: 9px;
+    border: none;
+    background-color: #2bc5c7;
+    color: white;
+    font-size: 14px;
+    font-weight: bold;
+    cursor: pointer;
+}
+
+
+/* Disabled Submit */
+
+#submitBtn:disabled {
+    background-color: #aaa;
+    cursor: not-allowed;
+}
+
+
+/* Enabled Submit Hover */
+
+#submitBtn:not(:disabled):hover {
+    background-color: #18aeb0;
+}
+
+
+/* Table */
+
+.table-container {
+    width: 100%;
+    margin-top: 20px;
+    overflow-x: auto;
+}
+
+
+table {
+    width: 100%;
+    border-collapse: collapse;
+    font-size: 13px;
+}
+
+
+th,
+td {
+    border: 1px solid #aaa;
+    padding: 8px;
+    text-align: left;
+}
+
+
+th {
+    background-color: #f5f5f5;
+    font-weight: bold;
+}
+
+
+/* Delete Button */
+
+.delete-btn {
+    background-color: #e63946;
+    color: white;
+    border: none;
+    padding: 5px 10px;
+    cursor: pointer;
+    font-size: 12px;
+}
+
+
+.delete-btn:hover {
+    background-color: #c82333;
+}
+
+
+/* Tablet */
+
+@media screen and (max-width: 768px) {
+
+    body {
+        padding: 30px 15px;
+    }
+
+    h1 {
+        font-size: 32px;
+        margin-bottom: 40px;
+    }
+
+    .table-container {
+        overflow-x: auto;
+    }
+
+    table {
+        min-width: 700px;
+    }
+}
+
+
+/* Mobile */
+
+@media screen and (max-width: 480px) {
+
+    body {
+        padding: 20px 10px;
+    }
+
+    h1 {
+        text-align: center;
+        font-size: 26px;
+        margin-bottom: 35px;
+    }
+
+    h2 {
+        font-size: 21px;
+    }
+
+    form {
+        padding: 15px;
+    }
+
+    table {
+        min-width: 700px;
+    }
+}
